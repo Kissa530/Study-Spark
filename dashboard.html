@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>StudySpark Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>📚 StudySpark</h1>
+
+<h2>Ask Anything</h2>
+
+<select id="mode">
+
+<option value="question">
+Ask Question
+</option>
+
+<option value="quiz">
+Generate Quiz
+</option>
+
+<option value="summary">
+Summarize
+</option>
+
+<option value="flashcards">
+Create Flashcards
+</option>
+
+<option value="Fill in the Blank">
+Fill in the Blank
+</option>
+
+<option value="Logout">
+Logout
+</option>
+
+
+</select>
+
+<textarea
+id="prompt"
+rows="8"
+cols="70"
+placeholder="Enter a topic or question..."
+></textarea>
+
+<br><br>
+
+<button id="askButton">
+Ask StudySpark
+</button>
+
+<button id="quizButton">
+Generate Quiz
+</button>
+
+<button id="summarizeButton">
+Summarize
+</button>
+
+<button id="flashcardButton">
+Create Flashcards
+</button>
+
+<button id="FillInTheBlankButton">
+Fill in the blank
+</button>
+
+<button id="logoutButton">
+Logout
+</button>
+
+
+
+<h2>Answer</h2>
+
+<div id="answer">
+Waiting for your question...
+</div>
+
+
+<h2>Quiz</h2>
+
+<div id="quiz">
+No quiz generated yet.
+</div>
+
+
+<h2>Summary</h2>
+
+<div id="summary">
+No summary generated yet.
+</div>
+
+
+<h2>Flashcards</h2>
+
+<div id="flashcards">
+No flashcards generated yet.
+</div>
+
+<h2>Fill in the Blank</h2>
+
+<div id="fillInTheBlank">
+No questions generated yet.
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
