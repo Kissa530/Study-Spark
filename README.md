@@ -93,3 +93,28 @@ MongoDB stores user account information using the following schema:
     email: String,
     password: String
 }
+---
+
+# Database CRUD Operations
+
+StudySpark uses MongoDB Atlas with Mongoose to perform CRUD (Create, Read, Update, Delete) operations on the Users collection.
+
+## Create
+
+Creates a new user account during signup.
+
+### Operation:
+- Adds a new document to the Users collection
+
+### Example:
+
+```javascript
+const newUser = new User({
+
+    username,
+    email,
+    password
+
+});
+
+await newUser.save();
