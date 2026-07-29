@@ -10,7 +10,7 @@ https://study-spark-mpnj.onrender.com/
 
 # GitHub Repository
 
-https://github.com/Kissa530/StudySpark
+https://github.com/Kissa530/Study-Spark
 
 ---
 
