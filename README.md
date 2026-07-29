@@ -1,6 +1,8 @@
 # Study-Spark
 
-StudySpark is an AI-powered study assistant web application that helps students learn more efficiently using Google's Gemini AI. Users can create accounts, ask questions, generate quizzes, summarize notes, create flashcards, and practice with fill-in-the-blank questions.
+StudySpark is an AI-powered study assistant web application designed to help students learn more efficiently. The application uses Google's Gemini AI to answer questions, generate quizzes, summarize notes, create flashcards, and generate fill-in-the-blank practice questions.
+
+Users can create an account, log in, and access the StudySpark dashboard to use the available AI study tools. User account information is stored using MongoDB Atlas.
 
 ---
 
