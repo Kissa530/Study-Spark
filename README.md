@@ -55,6 +55,74 @@ https://github.com/Kissa530/Study-Spark
 
 ---
 
+# How to Run the Server
+
+## 1. Install Dependencies
+
+Open the project folder in a terminal and install the required packages:
+
+```bash
+npm install
+```
+
+This installs all dependencies listed in `package.json`.
+
+---
+
+## 2. Configure Environment Variables
+
+Create a file named `.env` in the project root directory.
+
+Add the following environment variables:
+
+```env
+GEMINI_API_KEY=your_gemini_api_key
+MONGO_URI=your_mongodb_connection_string
+```
+
+Replace the placeholder values with your own:
+- Google Gemini API key
+- MongoDB Atlas connection string
+
+---
+
+## 3. Start the Server
+
+Run the following command:
+
+```bash
+node server.js
+```
+
+The Express server will start running. It should say 
+
+StudySpark running on port 3000 (for example)
+MongoDB connected
+
+---
+
+## 4. Open the Application
+
+Open a web browser and navigate to:
+
+```text
+http://localhost:3000
+```
+
+The StudySpark application will load. Users can create an account, log in, and access the AI study dashboard.
+
+---
+
+## Alternative Start Command
+
+If the `package.json` file contains a start script, the server can also be started using:
+
+```bash
+npm start
+```
+
+---
+
 # Technologies Used
 
 ## Frontend
