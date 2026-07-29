@@ -4,6 +4,16 @@ StudySpark is an AI-powered study assistant web application that helps students 
 
 ---
 
+# Live Demo
+
+https://study-spark-mpnj.onrender.com/
+
+# GitHub Repository
+
+https://github.com/Kissa530/StudySpark
+
+---
+
 # Features
 
 ## User Authentication
@@ -119,3 +129,5 @@ const newUser = new User({
 });
 
 await newUser.save();
+
+
