@@ -131,5 +131,82 @@ const newUser = new User({
 });
 
 await newUser.save();
+```
+
+---
+
+## Read
+
+Retrieves user information from the Users collection during login.
+
+### Operation:
+
+* Searches for a user using their email address
+
+### Example:
+
+```javascript
+const user = await User.findOne({
+
+    email: email
+
+});
+```
+
+The application checks whether the user exists and verifies the submitted password before allowing the user to access the StudySpark dashboard.
+
+---
+
+## Update
+
+Updates existing user information in the Users collection.
+
+### Operation:
+
+* Modifies a user's username, email, or password
+
+### Example:
+
+```javascript
+await User.updateOne(
+
+    { email: email },
+
+    {
+
+        $set: {
+
+            username: newUsername
+
+        }
+
+    }
+
+);
+```
+
+**Note:** Update functionality is supported by the MongoDB/Mongoose database design but is not currently available through the StudySpark user interface.
+
+---
+
+## Delete
+
+Deletes a user account from the Users collection.
+
+### Operation:
+
+* Removes a user document using the user's email address
+
+### Example:
+
+```javascript
+await User.deleteOne({
+
+    email: email
+
+});
+```
+
+**Note:** Delete functionality is supported by the MongoDB/Mongoose database design but is not currently available through the StudySpark user interface.
 
 
